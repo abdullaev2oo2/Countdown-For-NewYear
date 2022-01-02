@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -2rem;
+}
+.content .h1 {
+    color: rgb(10, 8, 131) !important;
+    font-weight: 500;
+    font-size: 8rem;
+    font-family: 'Pushster', cursive;
+}
+.divider{
+    padding: 0 0.5rem;
+    margin-top: 5.5rem;
+}
+.mobile-divider {
+    display: none;
+}
+.divider h5 {
+    font-size: 5rem;
+}
+.time div {
+    font-size: 2rem;
+    color: black ;
+}
+.time div:not(.divider) {
+    width: 9.5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.time h1 {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 8rem;
+    font-family: cursive;
+}
+.time p {
+    font-family: 'Pushster', cursive;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 10px;
+    }
+    body {
+        background: url(https://images.unsplash.com/photo-1544348842-f08c9d5e678b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: auto;
+        display: flex;
+        
+    }
+    .content .h1 {
+        font-weight: 500;
+        font-size: 5rem;
+        font-family: 'Pushster', cursive;
+        color: #fff !important;
+        /* position: relative; */
+        position: relative;
+        top: 5%;
+    }
+    .time{
+        flex-direction: column;
+        position: relative;
+        margin-top: 15rem;
+    }
+    /* asmas;ld00 */
+    .time div {
+        color: #fff !important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .time div:not(.divider) {
+        width: auto;
+        margin: 0;
+    }
+    .divider h5 {
+        display: none;
+    }
+    .mobile-divider {
+        display: block;
+    }
+    .time h1,
+    .time p,
+    .top .mobile-divider{
+        text-transform: capitalize;
+        font-size: 3.5rem !important;
+        margin: 0 2rem;
+        padding: 0;
+        width: auto;
+        color: #fff !important;
+    }
+}
