@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const minutesLeft = document.getElementById('minutes');
     const secondsLeft = document.getElementById('seconds');
     
-    const newYears = "1 Jan 2023"
     
     function countDown() {
-        const newYearsDate = new Date(newYears);
         const currentDate = new Date();
+        const newYears = `1 Jan ${currentDate.getFullYear() + 1}`;
+        const newYearsDate = new Date(newYears);
     
         const totalSeconds = (newYearsDate - currentDate) / 1000;
         const months = 11 - currentDate.getMonth();
