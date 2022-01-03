@@ -32,12 +32,21 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
         // putting to HTML
-        monthsLeft.innerHTML = months
-        daysLeft.innerHTML = days
-        hoursLeft.innerHTML = hours
-        minutesLeft.innerHTML = minutes 
-        secondsLeft.innerHTML = seconds
+        monthsLeft.innerHTML = formatTime(months)
+        daysLeft.innerHTML = formatTime(days)
+        hoursLeft.innerHTML = formatTime(hours)
+        minutesLeft.innerHTML = formatTime(minutes) 
+        secondsLeft.innerHTML = formatTime(seconds)
         
+
+        function formatTime(time) {
+            if (time < 10) {
+                return `0${time}`
+            }
+            else {
+                return time
+            }
+        }
     }
     countDown();
     
